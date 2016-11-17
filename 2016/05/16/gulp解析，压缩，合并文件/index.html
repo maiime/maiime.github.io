@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>gulp解析，压缩，合并文件 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="gulp也是Node.js的一个第三方插件，因此我们要使用他需要先本地全局安装1$ sudo npm install -g gulp //获取管理员权限并全局安装gulp
+终端进去你要操作的项目文件夹，初始化生成一个json文件1$ npm init	//初始化生成json文件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gulp解析，压缩，合并文件">
+<meta property="og:url" content="http://yoursite.com/2016/05/16/gulp解析，压缩，合并文件/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="gulp也是Node.js的一个第三方插件，因此我们要使用他需要先本地全局安装1$ sudo npm install -g gulp //获取管理员权限并全局安装gulp
+终端进去你要操作的项目文件夹，初始化生成一个json文件1$ npm init	//初始化生成json文件">
+<meta property="og:image" content="http://i4.buimg.com/9a6e8b60c5be3af9.png">
+<meta property="og:updated_time" content="2016-05-19T03:13:39.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="gulp解析，压缩，合并文件">
+<meta name="twitter:description" content="gulp也是Node.js的一个第三方插件，因此我们要使用他需要先本地全局安装1$ sudo npm install -g gulp //获取管理员权限并全局安装gulp
+终端进去你要操作的项目文件夹，初始化生成一个json文件1$ npm init	//初始化生成json文件">
+<meta name="twitter:image" content="http://i4.buimg.com/9a6e8b60c5be3af9.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-gulp解析，压缩，合并文件" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/16/gulp解析，压缩，合并文件/" class="article-date">
+  <time datetime="2016-05-16T11:43:52.000Z" itemprop="datePublished">2016-05-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      gulp解析，压缩，合并文件
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="gulp也是Node-js的一个第三方插件，因此我们要使用他需要先本地全局安装"><a href="#gulp也是Node-js的一个第三方插件，因此我们要使用他需要先本地全局安装" class="headerlink" title="gulp也是Node.js的一个第三方插件，因此我们要使用他需要先本地全局安装"></a>gulp也是Node.js的一个第三方插件，因此我们要使用他需要先本地全局安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install -g gulp //获取管理员权限并全局安装gulp</div></pre></td></tr></table></figure>
+<h2 id="终端进去你要操作的项目文件夹，初始化生成一个json文件"><a href="#终端进去你要操作的项目文件夹，初始化生成一个json文件" class="headerlink" title="终端进去你要操作的项目文件夹，初始化生成一个json文件"></a>终端进去你要操作的项目文件夹，初始化生成一个json文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm init	//初始化生成json文件</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="下载一个gulp用来支持本文件夹"><a href="#下载一个gulp用来支持本文件夹" class="headerlink" title="下载一个gulp用来支持本文件夹"></a>下载一个gulp用来支持本文件夹</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install gulp --save-dev</div></pre></td></tr></table></figure>
+<h2 id="在该文件加下创建一个名为gulpfile-js的文件"><a href="#在该文件加下创建一个名为gulpfile-js的文件" class="headerlink" title="在该文件加下创建一个名为gulpfile.js的文件"></a>在该文件加下创建一个名为gulpfile.js的文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ touch gulpfile.js//创建gulpfile.js文件</div></pre></td></tr></table></figure>
+<h1 id="文件解析"><a href="#文件解析" class="headerlink" title="文件解析"></a>文件解析</h1><p>gulp在开发过程中是异常好用的工具，为什么这么说呢，那是因为你还没有接触过jade,less,coffee,这些文件是网页的内容的另一种形式，不知道的可以去<a href="http://www.baidu.com" target="_blank" rel="external">百度一下</a>！！！代码很简单，但是不能完全被浏览器解析，也许在将来的某一天，浏览器就能支持了呢，所以现在解析的重担还要我们来扛，用了这个那都不是事！！！废话不多说，赶紧开始吧！</p>
+<h4 id="解析less文件–css"><a href="#解析less文件–css" class="headerlink" title="解析less文件–css"></a>解析less文件–css</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install gulp-less --save-dev//下载名为gulp-less的插件</div></pre></td></tr></table></figure>
+<p>如何查看你是否已经下载好了？打开我们刚才初始化出来的json文件，看到如下图即安装完成且版本为3.1.0：</p>
+<p><img src="http://i4.buimg.com/9a6e8b60c5be3af9.png"></p>
+<p>既然已经下载，下面我们就要开始写方法解析less了！<br>打开gulpfile.js文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var gulp = require(<span class="string">'gulp'</span>);//调用gulp库</div><div class="line">var less = require(<span class="string">'gulp-less'</span>);//调用gulp-less库，用来把less文件解析成css文件</div><div class="line">gulp.tash(<span class="string">"fn1"</span>,<span class="function"><span class="title">function</span></span>()&#123;定制一个名为fn1的任务方法（函数）</div><div class="line">	<span class="built_in">return</span> gulp.src(<span class="string">'css/index.less'</span>)找到文件</div><div class="line">		.pipe(less(<span class="string">'index.css'</span>))//解析成index.css</div><div class="line">		.pipe(gulp.dest(<span class="string">'css/'</span>));//输出到css文件夹下</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>保存，回到终端，在项目文件夹下输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ gulp fn1//执行gulpfile.js文件里名为fn1的任务</div></pre></td></tr></table></figure></p>
+<p>执行完任务之后回到项目文件夹下的css文件夹看看我们解析出来的成果吧！</p>
+<h5 id="解析文件的命令大同小异，我就不一一列举了，下面给出需要下载库的名称，已经及得应用什么库，就在gulpfile-js里面require一下。"><a href="#解析文件的命令大同小异，我就不一一列举了，下面给出需要下载库的名称，已经及得应用什么库，就在gulpfile-js里面require一下。" class="headerlink" title="解析文件的命令大同小异，我就不一一列举了，下面给出需要下载库的名称，已经及得应用什么库，就在gulpfile.js里面require一下。"></a>解析文件的命令大同小异，我就不一一列举了，下面给出需要下载库的名称，已经及得应用什么库，就在gulpfile.js里面require一下。</h5><ul>
+<li><h5 id="gulp-jade-将jade文件解析成html"><a href="#gulp-jade-将jade文件解析成html" class="headerlink" title="gulp-jade 将jade文件解析成html"></a>gulp-jade 将jade文件解析成html</h5></li>
+<li><h5 id="gulp-coffee-将coffee文件解析成js"><a href="#gulp-coffee-将coffee文件解析成js" class="headerlink" title="gulp-coffee 将coffee文件解析成js"></a>gulp-coffee 将coffee文件解析成js</h5></li>
+</ul>
+<h1 id="文件合并"><a href="#文件合并" class="headerlink" title="文件合并"></a>文件合并</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install gulp-concat --save-dev//下载支持包gulp-concat</div></pre></td></tr></table></figure>
+<p>下载完之后，也要打开gulpfile.js文件写一个合并任务：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var gulp = require(<span class="string">'gulp'</span>);//调用gulp库</div><div class="line">var concat = require(<span class="string">'gulp-concat'</span>);	//调用gulp-concat库，用来把相同文件合并成一个文件；</div><div class="line">gulp.tash(<span class="string">"fn2"</span>,<span class="function"><span class="title">function</span></span>()&#123;		//定制一个名为fn2的任务方法（函数）</div><div class="line">	<span class="built_in">return</span> gulp.src(<span class="string">'css/*.css'</span>)	//找到css文件夹下的所有格式为css的文件</div><div class="line">		.pipe(concat(<span class="string">'index.css'</span>))	//合并成index.css</div><div class="line">		.pipe(gulp.dest(<span class="string">'css/'</span>));	//输出到css文件夹下</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>在终端执行一下fn2,完成任务！！！</p>
+<p>当然html和js都可以用这一个任务执行，只要更改文件路径，格式，合成名称及格式，输出地址就行了</p>
+<h1 id="文件压缩"><a href="#文件压缩" class="headerlink" title="文件压缩"></a>文件压缩</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install gulp-cssmin --save-dev//下载支持包gulp-cssmin该包用来压缩css文件</div></pre></td></tr></table></figure>
+<p>下载之后，打开gulpfile.js文件写一个合并css的任务：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var gulp = require(<span class="string">'gulp'</span>);//调用gulp库</div><div class="line">var cssmin = require(<span class="string">'gulp-cssmin'</span>);//调用gulp-cssmin库，用来压缩css文件；</div><div class="line">gulp.tash(<span class="string">"fn3"</span>,<span class="function"><span class="title">function</span></span>()&#123;		//定制一个名为fn3的任务方法（函数）</div><div class="line">	<span class="built_in">return</span> gulp.src(<span class="string">'css/index.css'</span>)	//找到css文件夹下的index.css文件</div><div class="line">		.pipe(cssmin())		//压缩index.css文件</div><div class="line">		.pipe(gulp.dest(<span class="string">'css/'</span>));		//输出到css文件夹下</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>打开终端，执行任务fn3,完成任务！！！</p>
+<p>当然你也可以把合并和压缩全部写进一个任务里面</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var gulp = require(<span class="string">'gulp'</span>);//调用gulp库</div><div class="line">var concat = require(<span class="string">'gulp-concat'</span>);//调用gulp-concat库，用来把相同文件合并成一个文件；</div><div class="line">var cssmin = require(<span class="string">'gulp-cssmin'</span>);//调用gulp-cssmin库，用来压缩css文件；</div><div class="line">gulp.tash(<span class="string">"fn4"</span>,<span class="function"><span class="title">function</span></span>()&#123;		//定制一个名为fn3的任务方法（函数）</div><div class="line">	<span class="built_in">return</span> gulp.src(<span class="string">'css/*.css'</span>)	//找到css文件夹下所有css文件</div><div class="line">		.pipe(concat(<span class="string">'index.css'</span>))	//合并为index.css文件</div><div class="line">		.pipe(cssmin())		//压缩合成的index.css文件</div><div class="line">		.pipe(gulp.dest(<span class="string">'css/'</span>));	//输出到css文件夹下</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>ok,有什么不懂的请留言！！！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/16/gulp解析，压缩，合并文件/" data-id="civlqy4xd0004e4nvshq1zaih" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/05/20/用rem做傻瓜式响应式布局/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          用rem写傻瓜式响应式布局
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/14/简易盒模型的分析（新手请进）/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">简易盒模型的分析（新手请进）</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS/">JS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SEO/">SEO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lamp-m-p/">lamp(m,p)</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/响应式/">响应式</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/HTML/" style="font-size: 20px;">HTML</a> <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/Node-js/" style="font-size: 20px;">Node.js</a> <a href="/tags/SEO/" style="font-size: 10px;">SEO</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/lamp-m-p/" style="font-size: 20px;">lamp(m,p)</a> <a href="/tags/响应式/" style="font-size: 10px;">响应式</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/06/22/原生JavaScript实现ajax/">原生JavaScript实现ajax</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/21/php操作sql获得的返回值/">php操作sql获得的返回值</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/18/php操作sql/">php操作sql</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/25/字符串常用方法/">字符串常用方法</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/23/Tween-js详解/">Tween.js详解</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

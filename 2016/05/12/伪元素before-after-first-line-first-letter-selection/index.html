@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>伪元素before,after,first-line,first-letter,selection | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="::before和::after作用：相当于一个标签，在父标签内容之前/后显示，可以添加文本如：123456&amp;lt;style&amp;gt;	p::before&amp;#123;		content:&apos;Hello&apos;;	&amp;#125;&amp;lt;/style&amp;gt;	&amp;lt;p&amp;gt;我是Maii&amp;lt;/p&amp;gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="伪元素before,after,first-line,first-letter,selection">
+<meta property="og:url" content="http://yoursite.com/2016/05/12/伪元素before-after-first-line-first-letter-selection/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="::before和::after作用：相当于一个标签，在父标签内容之前/后显示，可以添加文本如：123456&amp;lt;style&amp;gt;	p::before&amp;#123;		content:&apos;Hello&apos;;	&amp;#125;&amp;lt;/style&amp;gt;	&amp;lt;p&amp;gt;我是Maii&amp;lt;/p&amp;gt;">
+<meta property="og:updated_time" content="2016-05-19T03:13:17.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="伪元素before,after,first-line,first-letter,selection">
+<meta name="twitter:description" content="::before和::after作用：相当于一个标签，在父标签内容之前/后显示，可以添加文本如：123456&amp;lt;style&amp;gt;	p::before&amp;#123;		content:&apos;Hello&apos;;	&amp;#125;&amp;lt;/style&amp;gt;	&amp;lt;p&amp;gt;我是Maii&amp;lt;/p&amp;gt;">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-伪元素before-after-first-line-first-letter-selection" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/12/伪元素before-after-first-line-first-letter-selection/" class="article-date">
+  <time datetime="2016-05-12T07:31:02.000Z" itemprop="datePublished">2016-05-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      伪元素before,after,first-line,first-letter,selection
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="before和-after"><a href="#before和-after" class="headerlink" title="::before和::after"></a>::before和::after</h1><p><strong>作用：</strong>相当于一个标签，在父标签内容之前/后显示，可以添加文本如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;style&gt;</div><div class="line">	p::before&#123;</div><div class="line">		content:<span class="string">'Hello'</span>;</div><div class="line">	&#125;</div><div class="line">&lt;/style&gt;	</div><div class="line">&lt;p&gt;我是Maii&lt;/p&gt;</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>页面显示的内容是”Hello我是Maii”;</p>
+<p>这两个伪元素在内容为空时（content:””为必选，不可省略），可以当做span标签来使用，它们有span标签的所有属性，你也可以这样理解，它们两个是写在CSS里面的span标签</p>
+<h1 id="first-line"><a href="#first-line" class="headerlink" title="::first-line"></a>::first-line</h1><p><strong>作用：</strong>改变第一行文本样式，只能改变文本样式</p>
+<h1 id="first-letter"><a href="#first-letter" class="headerlink" title="::first-letter"></a>::first-letter</h1><p><strong>作用：</strong>改变第一个汉字或者英文字母的样式</p>
+<h1 id="selection"><a href="#selection" class="headerlink" title="::selection"></a>::selection</h1><p><strong>作用：</strong>选中文本类容时，改变文本颜色，和背景颜色且只能改变这两个属性</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/12/伪元素before-after-first-line-first-letter-selection/" data-id="civlqy4xj0009e4nvx8qa56qo" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/05/13/SEO优化-标签/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          SEO优化-标签
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/12/github的本地克隆与上传/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">github的本地克隆与上传</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS/">JS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SEO/">SEO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lamp-m-p/">lamp(m,p)</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/响应式/">响应式</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/HTML/" style="font-size: 20px;">HTML</a> <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/Node-js/" style="font-size: 20px;">Node.js</a> <a href="/tags/SEO/" style="font-size: 10px;">SEO</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/lamp-m-p/" style="font-size: 20px;">lamp(m,p)</a> <a href="/tags/响应式/" style="font-size: 10px;">响应式</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/06/22/原生JavaScript实现ajax/">原生JavaScript实现ajax</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/21/php操作sql获得的返回值/">php操作sql获得的返回值</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/18/php操作sql/">php操作sql</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/25/字符串常用方法/">字符串常用方法</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/23/Tween-js详解/">Tween.js详解</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>php操作sql获得的返回值 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="今天我们继续来探究一下php操作sql,对于数据库的操作无非就是CRUD，刚学的，就是增删改查四个单词的简称，以后看到了要知道是什么（create,read,update,delete）。
+上次的博客已经教大家如何使用php对mysql进行操作了，那么操作之后的返回值是什么呢。下面就进入正题！！！
+12$sql = &quot;SELECT * FROM table&quot;;$result = $mysqli-&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="php操作sql获得的返回值">
+<meta property="og:url" content="http://yoursite.com/2016/06/21/php操作sql获得的返回值/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="今天我们继续来探究一下php操作sql,对于数据库的操作无非就是CRUD，刚学的，就是增删改查四个单词的简称，以后看到了要知道是什么（create,read,update,delete）。
+上次的博客已经教大家如何使用php对mysql进行操作了，那么操作之后的返回值是什么呢。下面就进入正题！！！
+12$sql = &quot;SELECT * FROM table&quot;;$result = $mysqli-&amp;">
+<meta property="og:image" content="http://i4.piimg.com/4851/a194366e79323aff.png">
+<meta property="og:image" content="http://i4.piimg.com/4851/824287fc47d8bd38.png">
+<meta property="og:image" content="http://i4.piimg.com/4851/88fc698cb0ab9a4c.png">
+<meta property="og:image" content="http://i1.piimg.com/4851/bdac52c3bef59c7a.png">
+<meta property="og:image" content="http://i1.piimg.com/4851/42c5ad7265c223ef.png">
+<meta property="og:updated_time" content="2016-06-27T12:02:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="php操作sql获得的返回值">
+<meta name="twitter:description" content="今天我们继续来探究一下php操作sql,对于数据库的操作无非就是CRUD，刚学的，就是增删改查四个单词的简称，以后看到了要知道是什么（create,read,update,delete）。
+上次的博客已经教大家如何使用php对mysql进行操作了，那么操作之后的返回值是什么呢。下面就进入正题！！！
+12$sql = &quot;SELECT * FROM table&quot;;$result = $mysqli-&amp;">
+<meta name="twitter:image" content="http://i4.piimg.com/4851/a194366e79323aff.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-php操作sql获得的返回值" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/21/php操作sql获得的返回值/" class="article-date">
+  <time datetime="2016-06-21T01:36:32.000Z" itemprop="datePublished">2016-06-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      php操作sql获得的返回值
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天我们继续来探究一下php操作sql,对于数据库的操作无非就是CRUD，刚学的，就是增删改查四个单词的简称，以后看到了要知道是什么（create,read,update,delete）。</p>
+<p>上次的博客已经教大家如何使用php对mysql进行操作了，那么操作之后的返回值是什么呢。下面就进入正题！！！</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$sql</span> = <span class="string">"SELECT * FROM table"</span>;</div><div class="line"><span class="variable">$result</span> = <span class="variable">$mysqli</span>-&gt;query(<span class="variable">$sql</span>);</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p><strong>那么这个$result在CRUD执行之后到底会返回什么鬼呢？如果按常理，会返回两种结果，无非就是成功与不成功，这只是猜想，其实你的猜想对了一半</strong></p>
+<h3 id="执行-增删改-result的值"><a href="#执行-增删改-result的值" class="headerlink" title="执行 增删改 $result的值"></a>执行 增删改 $result的值</h3><p><strong>要查看结果，需要用var_dump()打印其结果</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var_dump(<span class="variable">$result</span>);</div></pre></td></tr></table></figure>
+<p>得到<span style="color:blue">bool(true)</span>或<span style="color:blue">bool(false)</span>;</p>
+<h3 id="执行-查-result的值"><a href="#执行-查-result的值" class="headerlink" title="执行 查 $result的值"></a>执行 查 $result的值</h3><p><strong>继续打印</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var_dump(<span class="variable">$result</span>);</div></pre></td></tr></table></figure>
+<p>得到<span style="color:blue">object(mysqli_result)</span>或<span style="color:blue">bool(false)</span>;</p>
+<p><strong><span style="color:blue">object(mysqli_result)</span>就是我们所查询到的结果，然而在实际开发中，这也是最重要在数据</strong><br><img style="width:300px;border:2px solid #ccc" src="http://i4.piimg.com/4851/a194366e79323aff.png"></p>
+<h4 id="现在我们来看看这个object到底是什么，从上图中它的名字很容易看出来它是一个mysqli-result类型的object对象，我们只是看到了一堆没用的信息，我们查到的信息在哪里呢？其实这里面还是有可以利用的信息的，那就是num-rows-它的值代表着我们查询到了多少条相符的信息。常用来验证登录，注册，很简单就是拿到登录或注册的信息去数据库里查找，看-result-gt-num-rows的值，如果是0，那就是没有，如果是1（一般都是1，哪有一个用户表里面有两个相同的用户名？）那就是数据库中已经存在。但是如果只有这一个作用那未免太屈才了。下面就给大家介绍如何把查询到的结果一步步地拽出来！！！"><a href="#现在我们来看看这个object到底是什么，从上图中它的名字很容易看出来它是一个mysqli-result类型的object对象，我们只是看到了一堆没用的信息，我们查到的信息在哪里呢？其实这里面还是有可以利用的信息的，那就是num-rows-它的值代表着我们查询到了多少条相符的信息。常用来验证登录，注册，很简单就是拿到登录或注册的信息去数据库里查找，看-result-gt-num-rows的值，如果是0，那就是没有，如果是1（一般都是1，哪有一个用户表里面有两个相同的用户名？）那就是数据库中已经存在。但是如果只有这一个作用那未免太屈才了。下面就给大家介绍如何把查询到的结果一步步地拽出来！！！" class="headerlink" title="现在我们来看看这个object到底是什么，从上图中它的名字很容易看出来它是一个mysqli_result类型的object对象，我们只是看到了一堆没用的信息，我们查到的信息在哪里呢？其实这里面还是有可以利用的信息的，那就是num_rows,它的值代表着我们查询到了多少条相符的信息。常用来验证登录，注册，很简单就是拿到登录或注册的信息去数据库里查找，看$result-&gt;num_rows的值，如果是0，那就是没有，如果是1（一般都是1，哪有一个用户表里面有两个相同的用户名？）那就是数据库中已经存在。但是如果只有这一个作用那未免太屈才了。下面就给大家介绍如何把查询到的结果一步步地拽出来！！！"></a>现在我们来看看这个object到底是什么，从上图中它的名字很容易看出来它是一个mysqli_result类型的object对象，我们只是看到了一堆没用的信息，我们查到的信息在哪里呢？其实这里面还是有可以利用的信息的，那就是num_rows,它的值代表着我们查询到了多少条相符的信息。常用来验证登录，注册，很简单就是拿到登录或注册的信息去数据库里查找，看$result-&gt;num_rows的值，如果是0，那就是没有，如果是1（一般都是1，哪有一个用户表里面有两个相同的用户名？）那就是数据库中已经存在。但是如果只有这一个作用那未免太屈才了。下面就给大家介绍如何把查询到的结果一步步地拽出来！！！</h4><h3 id="查询结果解析"><a href="#查询结果解析" class="headerlink" title="查询结果解析"></a>查询结果解析</h3><p><strong>我们要得到最终的结果，还需要借助几个函数</strong></p>
+<h4 id="把查询结果转换成关联数组"><a href="#把查询结果转换成关联数组" class="headerlink" title="把查询结果转换成关联数组"></a>把查询结果转换成关联数组</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$row</span> = <span class="variable">$result</span>-&gt;fetch_assoc();</div><div class="line">var_dump(<span class="variable">$row</span>);</div></pre></td></tr></table></figure>
+<p><strong>打印结果如下：</strong></p>
+<p><img style="width:300px;border:2px solid #ccc" src="http://i4.piimg.com/4851/824287fc47d8bd38.png"></p>
+<h4 id="把查询结果转换成索引数组"><a href="#把查询结果转换成索引数组" class="headerlink" title="把查询结果转换成索引数组"></a>把查询结果转换成索引数组</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$row</span> = <span class="variable">$result</span>-&gt;fetch_row();</div><div class="line">var_dump(<span class="variable">$row</span>);</div></pre></td></tr></table></figure>
+<p><strong>打印结果如下：</strong></p>
+<p><img style="width:300px;border:2px solid #ccc" src="http://i4.piimg.com/4851/88fc698cb0ab9a4c.png"></p>
+<h4 id="把查询结果转换成数组"><a href="#把查询结果转换成数组" class="headerlink" title="把查询结果转换成数组"></a>把查询结果转换成数组</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$row</span> = <span class="variable">$result</span>-&gt;fetch_array(<span class="variable">$X</span>);</div><div class="line">var_dump(<span class="variable">$row</span>);</div></pre></td></tr></table></figure>
+<p><strong>$X为参数可选值为MYSQLI_ASSOC|MYSQLI_NUM|MYSQLI_BOTH，不难看出，当参数为MYSQLI_ASSOC时返回关联数组，当参数为MYSQLI_NUM时返回索引数组，当参数为MYSQLI_BOTH(默认)返回一个数组，但是这个数组既包含索引下标，也包含关联下标。打印结果如下：</strong></p>
+<p><img style="width:300px;border:2px solid #ccc" src="http://i1.piimg.com/4851/bdac52c3bef59c7a.png"></p>
+<h4 id="把查询结果转换成对象"><a href="#把查询结果转换成对象" class="headerlink" title="把查询结果转换成对象"></a>把查询结果转换成对象</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$row</span> = <span class="variable">$result</span>-&gt;fetch_object();</div><div class="line">var_dump(<span class="variable">$row</span>);</div></pre></td></tr></table></figure>
+<p><strong>打印结果如下：</strong></p>
+<p><img style="width:300px;border:2px solid #ccc" src="http://i1.piimg.com/4851/42c5ad7265c223ef.png"></p>
+<h4 id="大家可能会问了，为什么我的数据库里面有多条数据怎么只显示了一条呢？那是因为这种处理查询结果的方式一次只能处理一条，处理完第一条数据时，光标会定位到第二条数据的头部。如果你想输出每条数据很简单，代码如下："><a href="#大家可能会问了，为什么我的数据库里面有多条数据怎么只显示了一条呢？那是因为这种处理查询结果的方式一次只能处理一条，处理完第一条数据时，光标会定位到第二条数据的头部。如果你想输出每条数据很简单，代码如下：" class="headerlink" title="大家可能会问了，为什么我的数据库里面有多条数据怎么只显示了一条呢？那是因为这种处理查询结果的方式一次只能处理一条，处理完第一条数据时，光标会定位到第二条数据的头部。如果你想输出每条数据很简单，代码如下："></a>大家可能会问了，为什么我的数据库里面有多条数据怎么只显示了一条呢？那是因为这种处理查询结果的方式一次只能处理一条，处理完第一条数据时，光标会定位到第二条数据的头部。如果你想输出每条数据很简单，代码如下：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span>(<span class="variable">$row</span> = <span class="variable">$result</span>-&gt;fetch_assoc())&#123;</div><div class="line">	print_f(<span class="variable">$row</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>友情提示，打印数组需要用print_f()函数！！！</strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/21/php操作sql获得的返回值/" data-id="civlqy4xk000ae4nv69o6dyse" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/lamp-m-p/">lamp(m,p)</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/06/22/原生JavaScript实现ajax/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          原生JavaScript实现ajax
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/06/18/php操作sql/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">php操作sql</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS/">JS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SEO/">SEO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lamp-m-p/">lamp(m,p)</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/响应式/">响应式</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/HTML/" style="font-size: 20px;">HTML</a> <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/Node-js/" style="font-size: 20px;">Node.js</a> <a href="/tags/SEO/" style="font-size: 10px;">SEO</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/lamp-m-p/" style="font-size: 20px;">lamp(m,p)</a> <a href="/tags/响应式/" style="font-size: 10px;">响应式</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/06/22/原生JavaScript实现ajax/">原生JavaScript实现ajax</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/21/php操作sql获得的返回值/">php操作sql获得的返回值</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/18/php操作sql/">php操作sql</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/25/字符串常用方法/">字符串常用方法</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/23/Tween-js详解/">Tween.js详解</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

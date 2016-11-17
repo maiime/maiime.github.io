@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>php操作sql | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="对于从事前端的我们来说php是一们陌生的语言，但是又特别熟悉，如何想从事全栈，这又是必不可少的技能，我来总结一下自己学到的一点php技巧。
+链接数据库1$mysqli = new mysqli(&apos;localhost&apos;,&apos;username&apos;,&apos;password&apos;,&apos;mysql&apos;);">
+<meta property="og:type" content="article">
+<meta property="og:title" content="php操作sql">
+<meta property="og:url" content="http://yoursite.com/2016/06/18/php操作sql/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="对于从事前端的我们来说php是一们陌生的语言，但是又特别熟悉，如何想从事全栈，这又是必不可少的技能，我来总结一下自己学到的一点php技巧。
+链接数据库1$mysqli = new mysqli(&apos;localhost&apos;,&apos;username&apos;,&apos;password&apos;,&apos;mysql&apos;);">
+<meta property="og:updated_time" content="2016-06-20T13:39:48.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="php操作sql">
+<meta name="twitter:description" content="对于从事前端的我们来说php是一们陌生的语言，但是又特别熟悉，如何想从事全栈，这又是必不可少的技能，我来总结一下自己学到的一点php技巧。
+链接数据库1$mysqli = new mysqli(&apos;localhost&apos;,&apos;username&apos;,&apos;password&apos;,&apos;mysql&apos;);">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-php操作sql" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/18/php操作sql/" class="article-date">
+  <time datetime="2016-06-18T11:08:17.000Z" itemprop="datePublished">2016-06-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      php操作sql
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>对于从事前端的我们来说php是一们陌生的语言，但是又特别熟悉，如何想从事全栈，这又是必不可少的技能，我来总结一下自己学到的一点php技巧。</p>
+<h3 id="链接数据库"><a href="#链接数据库" class="headerlink" title="链接数据库"></a>链接数据库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$mysqli</span> = new mysqli(<span class="string">'localhost'</span>,<span class="string">'username'</span>,<span class="string">'password'</span>,<span class="string">'mysql'</span>);</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<ul>
+<li><h5 id="这个函数是用来实例化一个数据库的，它一共有6个参数，但是只有4个经常用到"><a href="#这个函数是用来实例化一个数据库的，它一共有6个参数，但是只有4个经常用到" class="headerlink" title="这个函数是用来实例化一个数据库的，它一共有6个参数，但是只有4个经常用到"></a>这个函数是用来实例化一个数据库的，它一共有6个参数，但是只有4个经常用到</h5></li>
+</ul>
+<h5 id="localhost"><a href="#localhost" class="headerlink" title="localhost"></a><span style="color:blue">localhost</span></h5><p>这是你所租用数据库的服务器地址(自行查看)</p>
+<h5 id="username"><a href="#username" class="headerlink" title="username"></a><span style="color:blue">username</span></h5><p>这是登录数据库所在服务器在用户名(自行查看)</p>
+<h5 id="password"><a href="#password" class="headerlink" title="password"></a><span style="color:blue">password</span></h5><p>这是登录数据库所在服务器在密码(自行查看)</p>
+<h5 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a><span style="color:blue">mysql</span></h5><p>这是你的数据库在名称(自行查看)</p>
+<h3 id="如何查看数据库是否链接成功"><a href="#如何查看数据库是否链接成功" class="headerlink" title="如何查看数据库是否链接成功"></a>如何查看数据库是否链接成功</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(<span class="variable">$mysqli</span>-&gt;connect_errno)&#123;</div><div class="line">	die(<span class="variable">$mysqli</span>-&gt;connect_error);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><h5 id="mysqli是我们实例化出来的数据库，名字是你在前面实例化时自己起的。这句话能判断数据库是否链接成功，那么它是什么意思呢？"><a href="#mysqli是我们实例化出来的数据库，名字是你在前面实例化时自己起的。这句话能判断数据库是否链接成功，那么它是什么意思呢？" class="headerlink" title="$mysqli是我们实例化出来的数据库，名字是你在前面实例化时自己起的。这句话能判断数据库是否链接成功，那么它是什么意思呢？"></a>$mysqli是我们实例化出来的数据库，名字是你在前面实例化时自己起的。这句话能判断数据库是否链接成功，那么它是什么意思呢？</h5></li>
+</ul>
+<h5 id="connect-errno"><a href="#connect-errno" class="headerlink" title="connect_errno"></a><span style="color:blue">connect_errno</span></h5><p>返回错误编码，0表示没有，其它的都是有错误。</p>
+<h5 id="connect-error"><a href="#connect-error" class="headerlink" title="connect_error"></a><span style="color:blue">connect_error</span></h5><p>返回错误信息，没有错误时为null。</p>
+<h5 id="die"><a href="#die" class="headerlink" title="die()"></a><span style="color:blue">die()</span></h5><p>“爹”函数，哈哈！这个函数，是用来打印函数所传参数的值，并且终止此函数后面所有php操作，保护数据安全。</p>
+<h3 id="设置读取，写入数据库时的编码格式，现在都用utf8"><a href="#设置读取，写入数据库时的编码格式，现在都用utf8" class="headerlink" title="设置读取，写入数据库时的编码格式，现在都用utf8"></a>设置读取，写入数据库时的编码格式，现在都用utf8</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$mysqli</span>-&gt;query(<span class="string">"set names utf8"</span>);</div></pre></td></tr></table></figure>
+<ul>
+<li><h5 id="one-world-one-dream！！！！😂大家都懂的。"><a href="#one-world-one-dream！！！！😂大家都懂的。" class="headerlink" title="one world!one dream！！！！😂大家都懂的。"></a>one world!one dream！！！！😂大家都懂的。</h5></li>
+</ul>
+<h3 id="书写增删改查语句并执行"><a href="#书写增删改查语句并执行" class="headerlink" title="书写增删改查语句并执行"></a>书写增删改查语句并执行</h3><ul>
+<li><h5 id="增-insert"><a href="#增-insert" class="headerlink" title="增(insert)"></a>增(insert)</h5></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$sql</span> = <span class="string">"INSERT INTO tableName(username,password) VALUES('maiime','stillAlive')"</span>;</div></pre></td></tr></table></figure>
+<p><strong>在名字叫tableName的表格中添加username为maiime,password为stillAlive的一条数据(username,password是你自己在数据库表格中设置在两列,可以自行设置)</strong></p>
+<ul>
+<li><h5 id="删-delete"><a href="#删-delete" class="headerlink" title="删(delete)"></a>删(delete)</h5></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$sql</span> = <span class="string">"DELETE FROM tableName WHERE username = 'maiime'"</span>;</div></pre></td></tr></table></figure>
+<p><strong>在名字叫tableName的表格中删除username为maiime的数据</strong></p>
+<ul>
+<li><h5 id="改-update"><a href="#改-update" class="headerlink" title="改(update)"></a>改(update)</h5></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$sql</span> = <span class="string">"UPDATE tableName SET username = 'stillAlive' WHERE username = 'maiime'"</span>;</div></pre></td></tr></table></figure>
+<p><strong>在名字叫tableName的表格中把username为maiime的数据的username改成stillAlive</strong></p>
+<ul>
+<li><h5 id="查-select"><a href="#查-select" class="headerlink" title="查(select)"></a>查(select)</h5></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$sql</span> = <span class="string">"SELECT * FROM tableName"</span>;</div></pre></td></tr></table></figure>
+<p><strong>在名字叫tableName的表格中查找所有数据,星星是通配的意思，就是所有的</strong></p>
+<ul>
+<li><h5 id="别高兴的太早了，这些只是些字符串，真正能执行，还得靠一个函数"><a href="#别高兴的太早了，这些只是些字符串，真正能执行，还得靠一个函数" class="headerlink" title="别高兴的太早了，这些只是些字符串，真正能执行，还得靠一个函数"></a>别高兴的太早了，这些只是些字符串，真正能执行，还得靠一个函数</h5></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$mysqli</span>-&gt;query(<span class="variable">$sql</span>);</div></pre></td></tr></table></figure>
+<p>需要用这个函数再次执行一下，这个函数是有返回值的，我会在下次更新中详细介绍这个返回值。这是不是说明今天的博客要写完了？别急，还没完。</p>
+<h3 id="断开与服务器在链接"><a href="#断开与服务器在链接" class="headerlink" title="断开与服务器在链接"></a>断开与服务器在链接</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$mysqli</span>-&gt;close();</div></pre></td></tr></table></figure>
+<p>使用完数据库一定要及时断开，因为你占用了一条通道，还有就是你永远不知道网络的深处有什么！！！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/18/php操作sql/" data-id="civlqy4xg0006e4nvyp5f43aa" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/lamp-m-p/">lamp(m,p)</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/06/21/php操作sql获得的返回值/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          php操作sql获得的返回值
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/25/字符串常用方法/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">字符串常用方法</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS/">JS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SEO/">SEO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lamp-m-p/">lamp(m,p)</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/响应式/">响应式</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/HTML/" style="font-size: 20px;">HTML</a> <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/Node-js/" style="font-size: 20px;">Node.js</a> <a href="/tags/SEO/" style="font-size: 10px;">SEO</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/lamp-m-p/" style="font-size: 20px;">lamp(m,p)</a> <a href="/tags/响应式/" style="font-size: 10px;">响应式</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/06/22/原生JavaScript实现ajax/">原生JavaScript实现ajax</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/21/php操作sql获得的返回值/">php操作sql获得的返回值</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/18/php操作sql/">php操作sql</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/25/字符串常用方法/">字符串常用方法</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/23/Tween-js详解/">Tween.js详解</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

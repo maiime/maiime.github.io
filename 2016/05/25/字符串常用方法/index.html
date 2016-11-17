@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>字符串常用方法 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="charAt()charAt(num)方法可返回指定位置的字符。
+num为数值，如果num不在0和字符串长度之间，则其结果返回一个空的字符串
+代码如下：
+123var str=&quot;hello world!&quot;;console.log(str.charAt(0));		//hconsole.log(str.charAt(1));		//e">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字符串常用方法">
+<meta property="og:url" content="http://yoursite.com/2016/05/25/字符串常用方法/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="charAt()charAt(num)方法可返回指定位置的字符。
+num为数值，如果num不在0和字符串长度之间，则其结果返回一个空的字符串
+代码如下：
+123var str=&quot;hello world!&quot;;console.log(str.charAt(0));		//hconsole.log(str.charAt(1));		//e">
+<meta property="og:updated_time" content="2016-05-25T08:19:50.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="字符串常用方法">
+<meta name="twitter:description" content="charAt()charAt(num)方法可返回指定位置的字符。
+num为数值，如果num不在0和字符串长度之间，则其结果返回一个空的字符串
+代码如下：
+123var str=&quot;hello world!&quot;;console.log(str.charAt(0));		//hconsole.log(str.charAt(1));		//e">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-字符串常用方法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/25/字符串常用方法/" class="article-date">
+  <time datetime="2016-05-25T02:15:53.000Z" itemprop="datePublished">2016-05-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      字符串常用方法
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="charAt"><a href="#charAt" class="headerlink" title="charAt()"></a>charAt()</h3><p>charAt(num)方法可返回指定位置的字符。</p>
+<p><strong>num为数值，如果num不在0和字符串长度之间，则其结果返回一个空的字符串</strong></p>
+<p>代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var str=<span class="string">"hello world!"</span>;</div><div class="line">console.log(str.charAt(0));		//h</div><div class="line">console.log(str.charAt(1));		//e</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="charCodeAt"><a href="#charCodeAt" class="headerlink" title="charCodeAt()"></a>charCodeAt()</h3><p>charCodeAt(num)方法可返回指定位置的字符的 Unicode 编码。这个返回值是 0 - 65535 之间的整数。</p>
+<p><strong>num为数值</strong></p>
+<p>代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var str=<span class="string">"hello world!"</span>;</div><div class="line">console.log(str.charCodeAt(0));		//104</div><div class="line">console.log(str.charCodeAt(1));		//101</div></pre></td></tr></table></figure>
+<h3 id="concat"><a href="#concat" class="headerlink" title="concat()"></a>concat()</h3><p>concat()方法用于连接两个或者多了字符串</p>
+<p><strong>多个的顺序为从左向右连接</strong></p>
+<p>代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var str=<span class="string">"hello world!"</span>;</div><div class="line">var str1=<span class="string">"我是str1"</span>;</div><div class="line">var str2=<span class="string">"我是str2"</span>;</div><div class="line">console.log(str.concat(str1));		//hello world!我是str1</div><div class="line">console.log(str.concat(str2,str1));		//hello world!我是str2我是str1</div><div class="line">console.log(str.concat(str2,<span class="string">"我是字符串"</span>,str1));		//hello world!我是str2我是字符串我是str1</div></pre></td></tr></table></figure>
+<h3 id="fromCharCode"><a href="#fromCharCode" class="headerlink" title="fromCharCode()"></a>fromCharCode()</h3><p>fromCharCode() 可接受一个指定的 Unicode 值，然后返回一个字符串。</p>
+<p><strong>该方法是 String 的静态方法，字符串中的每个字符都由单独的数字 Unicode 编码指定。</strong></p>
+<p>代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">console.log(String.fromCharCode(65,66,67));	//ABC</div></pre></td></tr></table></figure>
+<h3 id="indexOf"><a href="#indexOf" class="headerlink" title="indexOf()"></a>indexOf()</h3><p>indexOf(x1,x2)该方法用来查找字符串中是否x1这个字符串；</p>
+<p><strong>x1为想要查找的字符串，x2为想要开始的位置，范围是0-字符串长度-1，如果省略，则，从0开始向右，一般都是省略，如果未找到则返回-1,如果有多个则只返回第一个的位置；</strong></p>
+<p>代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var str=<span class="string">"hello world!"</span>;</div><div class="line">console.log(str.indexOf(“h”));	//0</div><div class="line">console.log(str.indexOf(“o wor”));	//4</div><div class="line">console.log(str.indexOf(“maii”));	//-1</div></pre></td></tr></table></figure>
+<h3 id="lastIndexOf"><a href="#lastIndexOf" class="headerlink" title="lastIndexOf()"></a>lastIndexOf()</h3><p>该方法同indexOf()，只不过是从后面向前面查找的</p>
+<h3 id="match"><a href="#match" class="headerlink" title="match()"></a>match()</h3><p>match()方法可在字符串内检索指定的值，或找到一个或多个正则表达式的匹配。</p>
+<p><strong>该方法类似 indexOf() 和 lastIndexOf()，但是它返回是一个数组里面为匹配到的字符串，而不是字符串的位置。</strong></p>
+<p>代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var str=<span class="string">"h1e2l3l4o wo57r3ld!"</span>;</div><div class="line">console.log(str.match(/\d/g))		//[<span class="string">"1"</span>, <span class="string">"2"</span>, <span class="string">"3"</span>, <span class="string">"4"</span>, <span class="string">"5"</span>, <span class="string">"7"</span>, <span class="string">"3"</span>]</div></pre></td></tr></table></figure>
+<h3 id="replace"><a href="#replace" class="headerlink" title="replace()"></a>replace()</h3><p>replace() 方法用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。</p>
+<p>代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var str=<span class="string">"hello world!"</span>;</div><div class="line">console.log(str.replace(<span class="string">"hello"</span>,<span class="string">"maii"</span>));		//maii world!</div></pre></td></tr></table></figure>
+<h3 id="search"><a href="#search" class="headerlink" title="search()"></a>search()</h3><p>search() 方法用于检索字符串中指定的子字符串，或检索与正则表达式相匹配的子字符串。<br><strong>与indexOf()类似，但是其长用在正则匹配里</strong><br>代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var str=<span class="string">"hello world!"</span>;</div><div class="line">console.log(str.search(<span class="string">"hello"</span>));		//0</div><div class="line">console.log(str.search(<span class="string">"llo"</span>));			//2</div></pre></td></tr></table></figure>
+<h3 id="slice"><a href="#slice" class="headerlink" title="slice()"></a>slice()</h3><p>slice(x,y) 方法可从已有的字符串或数组中返回选定的元素。<br><strong>截取字符串，从x开始到y结束，不含y</strong></p>
+<p>代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var str=<span class="string">"hello world!"</span>;</div><div class="line">console.log(str.slice(2,5));		//llo</div></pre></td></tr></table></figure>
+<h3 id="split"><a href="#split" class="headerlink" title="split()"></a>split()</h3><p>split() 方法用于把一个字符串分割成字符串数组。</p>
+<hr>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var str=<span class="string">"How are you doing today?"</span>;</div><div class="line">console.log(str.split(<span class="string">" "</span>));		//How,are,you,doing,today?</div><div class="line">console.log(str.split(<span class="string">""</span>));			//H,o,w, ,a,r,e, ,y,o,u, ,d,o,i,n,g, ,t,o,d,a,y,?</div><div class="line">console.log(str.split(<span class="string">" "</span>,3));			//How,are,you</div></pre></td></tr></table></figure>
+<h3 id="substr"><a href="#substr" class="headerlink" title="substr()"></a>substr()</h3><p>substr(x,y) 方法可在字符串中抽取从x下标开始的指定数目的字符。</p>
+<p><strong>y为长度，如果y不指定,则一直截取到最后</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var str=<span class="string">"hello world!"</span>;</div><div class="line">console.log(str.substr(2,5));		//oll w</div><div class="line">console.log(str.substr(2));			//llo world!</div></pre></td></tr></table></figure>
+<h3 id="substring"><a href="#substring" class="headerlink" title="substring()"></a>substring()</h3><p>substring() 方法用于提取字符串中介于两个指定下标之间的字符。</p>
+<p><strong>和上一个方法相同，不做演示</strong></p>
+<h3 id="toLowerCase"><a href="#toLowerCase" class="headerlink" title="toLowerCase()"></a>toLowerCase()</h3><p>toLowerCase() 方法用于把字符串转换为小写。</p>
+<p>代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var str=<span class="string">"HELLO WORLD!"</span>;</div><div class="line">console.log(str.toLowerCase());			//hello world!</div></pre></td></tr></table></figure>
+<h3 id="toUpperCase"><a href="#toUpperCase" class="headerlink" title="toUpperCase()"></a>toUpperCase()</h3><p>toUpperCase():全部字符变为大写，返回新字符串。</p>
+<p>代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var str=<span class="string">"hello world!"</span>;</div><div class="line">console.log(str.toLowerCase());			//HELLO WORLD!</div></pre></td></tr></table></figure>
+<h3 id="valueOf-NaN"><a href="#valueOf-NaN" class="headerlink" title="valueOf()"></a>valueOf()</h3><p>valueOf() 方法可返回 Boolean 对象的原始值。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var bol=<span class="literal">true</span>;</div><div class="line">console.log(bol.valueOf());		//<span class="literal">true</span>肯定是<span class="literal">true</span>了貌似没什么用，如果不是布尔类型，直接输出该值</div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/25/字符串常用方法/" data-id="civlqy4xq000ie4nvk0itz6cr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS/">JS</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/06/18/php操作sql/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          php操作sql
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/23/Tween-js详解/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Tween.js详解</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS/">JS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SEO/">SEO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lamp-m-p/">lamp(m,p)</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/响应式/">响应式</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/HTML/" style="font-size: 20px;">HTML</a> <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/Node-js/" style="font-size: 20px;">Node.js</a> <a href="/tags/SEO/" style="font-size: 10px;">SEO</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/lamp-m-p/" style="font-size: 20px;">lamp(m,p)</a> <a href="/tags/响应式/" style="font-size: 10px;">响应式</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/06/22/原生JavaScript实现ajax/">原生JavaScript实现ajax</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/21/php操作sql获得的返回值/">php操作sql获得的返回值</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/18/php操作sql/">php操作sql</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/25/字符串常用方法/">字符串常用方法</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/23/Tween-js详解/">Tween.js详解</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
