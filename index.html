@@ -61,6 +61,51 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Node.js操作MongoDB" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/14/Node.js操作MongoDB/" class="article-date">
+  <time datetime="2017-02-14T12:21:45.000Z" itemprop="datePublished">2017-02-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/14/Node.js操作MongoDB/">Node.js操作MongoDB</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Node连接MongoDB数据库"><a href="#Node连接MongoDB数据库" class="headerlink" title="Node连接MongoDB数据库"></a>Node连接MongoDB数据库</h1><p><strong>node干什么事都需要依赖依赖依赖，想要访问mongdoDB数据库也不例外，需要依赖“mongodb”</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i mongodb --save //安装mongodb依赖  i = install</div></pre></td></tr></table></figure>
+<p><strong>新建js文件如下，暂且命名为test.js</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">var mongo = require(<span class="string">"mongodb"</span>);</div><div class="line">var host = <span class="string">"localhost"</span>;</div><div class="line">var port = 27017;</div><div class="line"></div><div class="line">var server = new mongo.Server(host,port,&#123;auto_reconnect:<span class="literal">true</span>&#125;);</div><div class="line">var db = new mongo.Db(<span class="string">'maii'</span>,server,&#123;salf:<span class="literal">true</span>&#125;);   //maii为需要连接的数据库名称</div><div class="line">db.open((err,db)=&gt;&#123;</div><div class="line">    <span class="keyword">if</span>(err)&#123;</div><div class="line">        throw err;</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">        console.log(<span class="string">"连接成功！！！"</span>);</div><div class="line">        //tips:别说连接成功了，你不要做别的事！！！</div><div class="line">        db.close();</div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line">//监听断开数据库</div><div class="line">db.on(<span class="string">"close"</span>,(err,db)=&gt;&#123;</div><div class="line">    <span class="keyword">if</span>(err)&#123;</div><div class="line">        throw err;</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">        console.log(<span class="string">"断开连接！！！"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+        
+          <p class="article-more-link">
+            <a href="/2017/02/14/Node.js操作MongoDB/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.maii.me/2017/02/14/Node.js操作MongoDB/" data-id="ciz5bfabz000038nv8au5rz5b" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-原生JavaScript实现ajax" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/06/22/原生JavaScript实现ajax/" class="article-date">
@@ -93,7 +138,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.maii.me/2016/06/22/原生JavaScript实现ajax/" data-id="civlr06iy000bmcnvawynurq0" class="article-share-link">Share</a>
+      <a data-url="http://www.maii.me/2016/06/22/原生JavaScript实现ajax/" data-id="ciz5bfadb000s38nvk6l8etvg" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
@@ -138,7 +183,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.maii.me/2016/06/21/php操作sql获得的返回值/" data-id="civlr06iu0008mcnvyjof7f9a" class="article-share-link">Share</a>
+      <a data-url="http://www.maii.me/2016/06/21/php操作sql获得的返回值/" data-id="ciz5bfacg000938nvn2nkzq6r" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/lamp-m-p/">lamp(m,p)</a></li></ul>
@@ -182,7 +227,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.maii.me/2016/06/18/php操作sql/" data-id="civlr06ip0004mcnvj8m8t0dg" class="article-share-link">Share</a>
+      <a data-url="http://www.maii.me/2016/06/18/php操作sql/" data-id="ciz5bfac9000438nv7s7bv5i8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/lamp-m-p/">lamp(m,p)</a></li></ul>
@@ -228,47 +273,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.maii.me/2016/05/25/字符串常用方法/" data-id="civlr06j0000fmcnv15a1aui0" class="article-share-link">Share</a>
+      <a data-url="http://www.maii.me/2016/05/25/字符串常用方法/" data-id="ciz5bfadh000w38nvdnizfytt" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS/">JS</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Tween-js详解" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/23/Tween-js详解/" class="article-date">
-  <time datetime="2016-05-23T12:21:45.000Z" itemprop="datePublished">2016-05-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/23/Tween-js详解/">Tween.js详解</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.maii.me/2016/05/23/Tween-js详解/" data-id="civlr06is0005mcnvao248ykk" class="article-share-link">Share</a>
-      
-      
     </footer>
   </div>
   
@@ -314,7 +323,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.maii.me/2016/05/20/用rem做傻瓜式响应式布局/" data-id="civlr06j1000hmcnv5a71svc7" class="article-share-link">Share</a>
+      <a data-url="http://www.maii.me/2016/05/20/用rem做傻瓜式响应式布局/" data-id="ciz5bfacc000538nvultzmyg6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/响应式/">响应式</a></li></ul>
@@ -358,7 +367,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.maii.me/2016/05/16/gulp解析，压缩，合并文件/" data-id="civlr06io0003mcnvq8jbivdr" class="article-share-link">Share</a>
+      <a data-url="http://www.maii.me/2016/05/16/gulp解析，压缩，合并文件/" data-id="ciz5bfada000r38nv2u7vydu1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
@@ -411,7 +420,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.maii.me/2016/05/14/简易盒模型的分析（新手请进）/" data-id="civlr06j3000kmcnvoks25eqf" class="article-share-link">Share</a>
+      <a data-url="http://www.maii.me/2016/05/14/简易盒模型的分析（新手请进）/" data-id="ciz5bface000838nvk13b54tt" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li></ul>
@@ -462,7 +471,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.maii.me/2016/05/13/SEO优化-标签/" data-id="civlr06ig0000mcnv3puj7tpb" class="article-share-link">Share</a>
+      <a data-url="http://www.maii.me/2016/05/13/SEO优化-标签/" data-id="ciz5bfac3000138nvb2rga1x0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SEO/">SEO</a></li></ul>
@@ -505,7 +514,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.maii.me/2016/05/12/伪元素before-after-first-line-first-letter-selection/" data-id="civlr06iw0009mcnv6itxs7q0" class="article-share-link">Share</a>
+      <a data-url="http://www.maii.me/2016/05/12/伪元素before-after-first-line-first-letter-selection/" data-id="ciz5bfacj000b38nvsb0scns0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li></ul>
@@ -543,7 +552,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/HTML/" style="font-size: 20px;">HTML</a> <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/Node-js/" style="font-size: 20px;">Node.js</a> <a href="/tags/SEO/" style="font-size: 10px;">SEO</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/lamp-m-p/" style="font-size: 20px;">lamp(m,p)</a> <a href="/tags/响应式/" style="font-size: 10px;">响应式</a>
+      <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/HTML/" style="font-size: 15px;">HTML</a> <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/Node-js/" style="font-size: 20px;">Node.js</a> <a href="/tags/SEO/" style="font-size: 10px;">SEO</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/lamp-m-p/" style="font-size: 15px;">lamp(m,p)</a> <a href="/tags/响应式/" style="font-size: 10px;">响应式</a>
     </div>
   </div>
 
@@ -552,7 +561,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
     </div>
   </div>
 
@@ -563,6 +572,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/02/14/Node.js操作MongoDB/">Node.js操作MongoDB</a>
+          </li>
         
           <li>
             <a href="/2016/06/22/原生JavaScript实现ajax/">原生JavaScript实现ajax</a>
@@ -580,10 +593,6 @@
             <a href="/2016/05/25/字符串常用方法/">字符串常用方法</a>
           </li>
         
-          <li>
-            <a href="/2016/05/23/Tween-js详解/">Tween.js详解</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -596,7 +605,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2016 maii<br>
+      &copy; 2017 maii<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
