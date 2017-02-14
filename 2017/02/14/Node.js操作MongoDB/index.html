@@ -6,21 +6,18 @@
   <title>Node.js操作MongoDB | Maii</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Node连接MongoDB数据库node干什么事都需要依赖依赖依赖，想要访问mongdoDB数据库也不例外，需要依赖“mongodb”
-1npm i mongodb --save //安装mongodb依赖  i = install
-新建js文件如下，暂且命名为test.js1234567891011121314151617181920212223var mongo = require(&quot;mong">
+1npm i mongodb --save //安装mongodb依赖  i = install">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Node.js操作MongoDB">
 <meta property="og:url" content="http://www.maii.me/2017/02/14/Node.js操作MongoDB/index.html">
 <meta property="og:site_name" content="Maii">
 <meta property="og:description" content="Node连接MongoDB数据库node干什么事都需要依赖依赖依赖，想要访问mongdoDB数据库也不例外，需要依赖“mongodb”
-1npm i mongodb --save //安装mongodb依赖  i = install
-新建js文件如下，暂且命名为test.js1234567891011121314151617181920212223var mongo = require(&quot;mong">
-<meta property="og:updated_time" content="2017-02-14T09:15:15.000Z">
+1npm i mongodb --save //安装mongodb依赖  i = install">
+<meta property="og:updated_time" content="2017-02-14T09:18:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Node.js操作MongoDB">
 <meta name="twitter:description" content="Node连接MongoDB数据库node干什么事都需要依赖依赖依赖，想要访问mongdoDB数据库也不例外，需要依赖“mongodb”
-1npm i mongodb --save //安装mongodb依赖  i = install
-新建js文件如下，暂且命名为test.js1234567891011121314151617181920212223var mongo = require(&quot;mong">
+1npm i mongodb --save //安装mongodb依赖  i = install">
   
     <link rel="alternate" href="/atom.xml" title="Maii" type="application/atom+xml">
   
@@ -93,8 +90,8 @@
       
         <h1 id="Node连接MongoDB数据库"><a href="#Node连接MongoDB数据库" class="headerlink" title="Node连接MongoDB数据库"></a>Node连接MongoDB数据库</h1><p><strong>node干什么事都需要依赖依赖依赖，想要访问mongdoDB数据库也不例外，需要依赖“mongodb”</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i mongodb --save //安装mongodb依赖  i = install</div></pre></td></tr></table></figure>
-<p><strong>新建js文件如下，暂且命名为test.js</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">var mongo = require(<span class="string">"mongodb"</span>);</div><div class="line">var host = <span class="string">"localhost"</span>;</div><div class="line">var port = 27017;</div><div class="line"></div><div class="line">var server = new mongo.Server(host,port,&#123;auto_reconnect:<span class="literal">true</span>&#125;);</div><div class="line">var db = new mongo.Db(<span class="string">'maii'</span>,server,&#123;salf:<span class="literal">true</span>&#125;);   //maii为需要连接的数据库名称</div><div class="line">db.open((err,db)=&gt;&#123;</div><div class="line">    <span class="keyword">if</span>(err)&#123;</div><div class="line">        throw err;</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">        console.log(<span class="string">"连接成功！！！"</span>);</div><div class="line">        //tips:别说连接成功了，你不要做别的事！！！</div><div class="line">        db.close();</div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line">//监听断开数据库</div><div class="line">db.on(<span class="string">"close"</span>,(err,db)=&gt;&#123;</div><div class="line">    <span class="keyword">if</span>(err)&#123;</div><div class="line">        throw err;</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">        console.log(<span class="string">"断开连接！！！"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
+<p><strong>新建js文件如下，暂且命名为test.js</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">var mongo = require(<span class="string">"mongodb"</span>);</div><div class="line">var host = <span class="string">"localhost"</span>;</div><div class="line">var port = 27017;</div><div class="line"></div><div class="line">var server = new mongo.Server(host,port,&#123;auto_reconnect:<span class="literal">true</span>&#125;);</div><div class="line">var db = new mongo.Db(<span class="string">'maii'</span>,server,&#123;salf:<span class="literal">true</span>&#125;);   //maii为需要连接的数据库名称</div><div class="line">db.open((err,db)=&gt;&#123;</div><div class="line">    <span class="keyword">if</span>(err)&#123;</div><div class="line">        throw err;</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">        console.log(<span class="string">"连接成功！！！"</span>);</div><div class="line">        //tips:别说连接成功了，你不要做别的事！！！</div><div class="line">        db.close();</div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line">//监听断开数据库</div><div class="line">db.on(<span class="string">"close"</span>,(err,db)=&gt;&#123;</div><div class="line">    <span class="keyword">if</span>(err)&#123;</div><div class="line">        throw err;</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">        console.log(<span class="string">"断开连接！！！"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
 <p><strong>现在你就可以win+r找到这个test.js所在的文件夹</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node test.js</div></pre></td></tr></table></figure></p>
 <p><strong>执行结果</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">连接成功！！！</div><div class="line"></div><div class="line">断开连接！！！</div><div class="line">/*tips:如果报错注意你的mongod服务是不是没起，还有就是你的数据库设置了用户名，密码*/</div></pre></td></tr></table></figure></p>
 <h1 id="Node操作MongoDB数据库"><a href="#Node操作MongoDB数据库" class="headerlink" title="Node操作MongoDB数据库"></a>Node操作MongoDB数据库</h1><p><strong>刚才不是在上面test.js文件的代码中，提示你要做点事吗，现在我们就来对数据库进行操作</strong></p>
@@ -110,7 +107,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.maii.me/2017/02/14/Node.js操作MongoDB/" data-id="ciz5bfabz000038nv8au5rz5b" class="article-share-link">Share</a>
+      <a data-url="http://www.maii.me/2017/02/14/Node.js操作MongoDB/" data-id="ciz5bh7f00000w8nv7twdqs5h" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
